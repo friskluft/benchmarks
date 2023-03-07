@@ -1,0 +1,16 @@
+synthetic_nrois=1000_roiarea=10000\.tif -- 1 threads -- 170 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 2 threads -- 93 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 3 threads -- 89 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 4 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 5 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 6 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 7 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 8 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 9 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 10 threads -- 84 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 11 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 12 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 13 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 14 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 15 threads -- 85 seconds
+synthetic_nrois=1000_roiarea=10000\.tif -- 16 threads -- 85 seconds
