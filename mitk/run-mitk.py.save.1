@@ -1,0 +1,69 @@
+import cv2		# ROI labels manipulation
+import numpy as np
+import os		# iterating directory files
+import pandas as pd	# saving results as CSV
+import datetime
+import subprocess
+
+#Timing
+t_a = datetime.datetime.now()
+
+
+int_dir = '/home/ec2-user/work/data/mini/int'
+seg_dir = '/home/ec2-user/work/data/mini/seg'
+#dir = '/home/ec2-user/work/data/tissuenet/seg'
+
+### out_dir = 'C:\\WORK\\AXLE\\data\\OUTPUT-mini'
+### out_dir = '/home/ec2-user/work/data/OUTPUT-mini'
+out_dir = '/home/ec2-user/work/data/OUTPUT-tissuenet'
+mitk_exe = '/home/ec2-user/work/mitk/MITK-github/build/MITK-build/bin/MitkCLGlobalImageFeatures'
+
+# Check the dataset's consistency
+i_files = os.listdir(int_dir)
+s_files = os.listdir(seg_dir)
+# --compare sets i and s
+print()
+
+# iterate over files in
+# that directory
+for fn in os.listdir(seg_dir):
+    f = os.path.join(seg_dir, fn)
+
+    # checking if it is a file
+    if os.path.isfile(f):
+        print (f'file {f}')
+        # Prepare the destination
+        feResult = []
+        f_csv = os.path.join (out_dir, fn) + '.csv'
+        # Read the image
+        img = cv2.imread(f, 2)
+        # iterate labels
+        print('LABELS', end=' ', flush=True)
+        unkLabels = np.unique(img)
+        for label in unkLabels:
+            if (label == 0):
+                continue
+            print (f'{label} ', end='', flush=True)
+            threshed = cv2.inRange (img, int(label), int(label))
+            bw = np.array (threshed, dtype='bool')
+            #--debug-- print(bw)
+             	
+            #---    fvals = imea.shape_measurements_2d(bw)
+            
+            #---    feResult.append(fvals)
+            #XXX	exitCode = subprocess.run ([mitk_exe], check=False)
+            
+        print ('DONE', flush=True)
+
+'''
+        # Output
+        feResult = pd.concat(feResult)
+        feResult.to_csv(f_csv)
+'''
+
+# Timing
+t_b = datetime.datetime.now()
+t_elap = t_b - t_a
+print (t_elap.seconds, 'seconds')
+print (t_elap.microseconds, 'microseconds')
+

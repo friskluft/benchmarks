@@ -1,0 +1,57 @@
+# import cv2
+import numpy as np
+# from matplotlib import pyplot as plt
+# import imea
+import os
+import pandas as pd
+import datetime
+
+#Timing
+t_a = datetime.datetime.now()
+
+### dir = 'C:\\WORK\\AXLE\\data\\mini\\seg' 
+### dir = '/home/ec2-user/work/data/mini/seg'
+dir = '/home/ec2-user/work/data/tissuenet/seg'
+### out_dir = 'C:\\WORK\\AXLE\\data\\OUTPUT-mini'
+### out_dir = '/home/ec2-user/work/data/OUTPUT-mini'
+out_dir = '/home/ec2-user/work/data/OUTPUT-tissuenet'
+
+# iterate over files in
+# that directory
+for fn in os.listdir(dir):
+    f = os.path.join(dir, fn)
+    # checking if it is a file
+    if os.path.isfile(f):
+        print (f'file {f}')
+        # Prepare the destination
+        feResult = []
+        f_csv = os.path.join (out_dir, fn) + '.csv'
+        # Read the image
+        img = cv2.imread(f, 2)
+        # iterate labels
+        print('LABELS', end=' ', flush=True)
+        unkLabels = np.unique(img)
+        for label in unkLabels:
+            if (label == 0):
+                continue
+            print (f'{label} ', end='', flush=True)
+            threshed = cv2.inRange (img, int(label), int(label))
+            bw = np.array (threshed, dtype='bool')
+            #--debug-- 
+            print(bw)	
+             	
+            #---    fvals = imea.shape_measurements_2d(bw)
+            
+            #---    feResult.append(fvals)
+            
+        print ('DONE', flush=True)
+        # Output
+        feResult = pd.concat(feResult)
+        feResult.to_csv(f_csv)
+
+# Timing
+t_b = datetime.datetime.now()
+t_elap = t_b - t_a
+print (t_elap.seconds, 'seconds')
+print (t_elap.microseconds, 'microseconds')
+
