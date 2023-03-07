@@ -1,0 +1,16 @@
+# file nist_inten.features
+
+	# -- intensity --
+		
+ENERGY				#	Energy	
+ENTROPY				#	Entropy	
+HYPERFLATNESS		#	Hyperflatness	
+HYPERSKEWNESS		#	Hyperskewness	
+INTERQUARTILE_RANGE	#	IQR	
+KURTOSIS			#	Kurtosis	
+MEAN				#	Mean	
+MEDIAN				#	Median	
+MODE				#	Mode	
+STANDARD_DEVIATION	#	STD	
+SKEWNESS			#	Skewness	
+

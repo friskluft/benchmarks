@@ -1,0 +1,7 @@
+# file imea_micro.features
+
+	#	-- Microdescriptors --
+	
+FRACT_DIM_BOXCOUNT	#	Fractal dim boxcounting
+FRACT_DIM_PERIMETER	#	Fractal dim perimeter
+

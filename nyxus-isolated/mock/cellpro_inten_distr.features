@@ -1,0 +1,7 @@
+# file cellpro_inten_distr.features
+
+# -- Intensity distribution --
+FRAC_AT_D	#	FracAtD
+MEAN_FRAC	#	MeanFrac
+RADIAL_CV	#	RadialCV
+ZERNIKE2D	#	Zernike

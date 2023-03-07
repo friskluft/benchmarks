@@ -1,0 +1,9 @@
+# file matlab_caliper.features
+
+	# -- Statistical lengths --
+		
+MAX_FERET_ANGLE	#	Feret max angle	
+MAX_FERET_DIAMETER	#	Feret max \diameter	
+MIN_FERET_ANGLE	#	Feret min angle	
+MIN_FERET_DIAMETER	#	Feret min \diameter	
+

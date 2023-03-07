@@ -1,0 +1,35 @@
+# file wc_shape.features
+
+	#-- Shape --
+
+AREA_PIXELS_COUNT	#	Area	
+BBOX_HEIGHT	#	BB Height	
+BBOX_WIDTH	#	BB Width	
+BBOX_XMIN	#	Bounding Box X	
+BBOX_YMIN	#	Bounding Box Y	
+CENTROID_X	#	Centroid X	
+CENTROID_Y	#	Centroid Y	
+CIRCULARITY	#	Circularity, formfactor	
+COMPACTNESS	#	Compactness	
+CONVEX_HULL_AREA	#	Convex hull area	
+DIAMETER_MIN_ENCLOSING_CIRCLE	#	\diameter min encl circle	
+DIAMETER_CIRCUMSCRIBING_CIRCLE	#	\diameter circumscr circle	
+DIAMETER_INSCRIBING_CIRCLE	#	\diameter inscr circle	
+DIAMETER_EQUAL_AREA	#	\diameter equal area	
+DIAMETER_EQUAL_PERIMETER	#	\diameter equal perimeter
+ECCENTRICITY	#	Eccentricity	
+ELONGATION	#	Elongation	
+EXTENT		#	Extent	
+EULER_NUMBER	#	Euler number	
+GEODETIC_LENGTH	#	Geodetic length	
+THICKNESS	#	Geodetic thickness	
+MAJOR_AXIS_LENGTH	#	Major axis length/min BB length	
+ROI_RADIUS_MAX	#	Max radius	
+ROI_RADIUS_MEDIAN	#	Median radius	
+ROI_RADIUS_MEAN	#	Mean radius	
+MINOR_AXIS_LENGTH	#	Minor axis length/Min BB width	
+ORIENTATION	#	Orientation	
+PERIMETER	#	Perimeter	
+SOLIDITY	#	Solidity	
+
+

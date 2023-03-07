@@ -1,0 +1,7 @@
+# file imea_meso.features
+
+	# -- Mesodescriptors --
+	
+EROSIONS_2_VANISH	#	Erosions to vanish
+EROSIONS_2_VANISH_COMPLEMENT	#	Eros to vanish compl
+

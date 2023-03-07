@@ -1,0 +1,9 @@
+# file matlab_texture.features
+
+	# -- GLCM --
+		
+GLCM_CONTRAST		#	Contrast
+GLCM_CORRELATION	#	Correlation
+#--still in PR-- GLCM_ENERGY			#	Energy
+#--still in PR-- GLCM_HOMOGENEITY	#	Homogeneity
+

@@ -1,0 +1,15 @@
+# file imea_shape.features
+
+AREA_PIXELS_COUNT	#	Area
+BBOX_HEIGHT			#	BB Height
+BBOX_WIDTH			#	BB Width
+BBOX_XMIN			#	Bounding Box X
+BBOX_YMIN			#	Bounding Box Y
+CENTROID_X			#	Centroid X
+CENTROID_Y			#	Centroid Y
+CIRCULARITY			#	Circularity, formfactor
+ECCENTRICITY		#	Eccentricity
+ORIENTATION			#	Orientation
+PERIMETER			#	Perimeter
+
+

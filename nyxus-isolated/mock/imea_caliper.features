@@ -1,0 +1,35 @@
+# file imea_caliper.features
+
+	# -- Statistical lengths --
+		
+STAT_FERET_DIAM_MODE	#	Feret \diameter mode	
+STAT_FERET_DIAM_STDDEV	#	Feret \diameter stddev	
+MAX_FERET_DIAMETER	#	Feret max \diameter	
+STAT_FERET_DIAM_MEAN	#	Feret mean \diameter	
+STAT_FERET_DIAM_MEDIAN	#	Feret median \diameter	
+MIN_FERET_DIAMETER	#	Feret min \diameter	
+STAT_MARTIN_DIAM_MAX	#	Martin max \diameter	
+STAT_MARTIN_DIAM_MEAN	#	Martin mean \diameter	
+STAT_MARTIN_DIAM_MEDIAN	#	Martin median \diameter	
+STAT_MARTIN_DIAM_MIN	#	Martin min \diameter	
+STAT_MARTIN_DIAM_MODE	#	Martin \diameter mode	
+STAT_MARTIN_DIAM_STDDEV	#	Martin \diameter stddev	
+STAT_NASSENSTEIN_DIAM_MAX	#	Nassenstein max \diameter	
+STAT_NASSENSTEIN_DIAM_MEAN	#	Nassenstein mean \diameter	
+STAT_NASSENSTEIN_DIAM_MEDIAN	#	Nassenstein median \diameter	
+STAT_NASSENSTEIN_DIAM_MIN	#	Nassenstein min \diameter	
+STAT_NASSENSTEIN_DIAM_MODE	#	Nassenstein \diameter mode	
+STAT_NASSENSTEIN_DIAM_STDDEV	#	Nassenstein \diameter stddev	
+MAXCHORDS_MAX	#	Maxchords max	
+MAXCHORDS_MEAN	#	Maxchords mean	
+MAXCHORDS_MEDIAN	#	Maxchords median	
+MAXCHORDS_MIN	#	Maxchords min	
+MAXCHORDS_MODE	#	Maxchords mode	
+MAXCHORDS_STDDEV	#	Maxchords stddev	
+ALLCHORDS_MAX	#	Allchords max	
+ALLCHORDS_MEAN	#	Allchords mean	
+ALLCHORDS_MEDIAN	#	Allchords median	
+ALLCHORDS_MIN	#	Allchords min	
+ALLCHORDS_MODE	#	Allchords mode	
+ALLCHORDS_STDDEV	#	Allchords stddev	
+

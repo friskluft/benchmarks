@@ -1,0 +1,24 @@
+# file mitk_intensity.features
+
+	# -- 2D intensity --
+		
+EDGE_MEAN_INTENSITY		#	Edge inten mean
+EDGE_STDDEV_INTENSITY	#	Edge inten stddev
+ENERGY					#	Energy
+ENTROPY					#	Entropy
+INTERQUARTILE_RANGE		#	IQR
+KURTOSIS				#	Kurtosis
+MAX						#	Max
+MEAN					#	Mean
+MEAN_ABSOLUTE_DEVIATION	#	MAD
+MEDIAN					#	Median
+MIN						#	Min
+MODE					#	Mode
+P01, P10, P25, P75, P90, P99	#	\%tiles
+RANGE					#	Range
+ROBUST_MEAN_ABSOLUTE_DEVIATION	#	RMAD
+ROOT_MEAN_SQUARED		#	RMS
+STANDARD_DEVIATION		#	STD
+SKEWNESS				#	Skewness
+UNIFORMITY				#	Uniformity
+UNIFORMITY_PIU			#	Uniformity PIU

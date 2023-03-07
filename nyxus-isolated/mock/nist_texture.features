@@ -1,0 +1,37 @@
+# file nist_texture.features
+
+	#-- GLCM --
+
+GLCM_CONTRAST	#	Contrast	
+GLCM_CORRELATION	#	Correlation	
+#--still in PR-- GLCM_DIFFERENCEAVERAGE	#	Difference Average	
+GLCM_DIFFERENCEENTROPY	#	Difference Entropy	
+GLCM_DIFFERENCEVARIANCE	#	Difference Variance	
+#--still in PR-- GLCM_ENERGY	#	Energy	
+GLCM_ENTROPY	#	Entropy	
+#--still in PR-- GLCM_HOMOGENEITY	#	Homogeneity	
+GLCM_INVERSEDIFFERENCEMOMENT	#	IDM	
+GLCM_SUMAVERAGE	#	Sum Average	
+GLCM_SUMENTROPY	#	Sum Entropy	
+GLCM_SUMVARIANCE	#	Sum Variance	
+GLCM_VARIANCE	#	Variance	
+
+	#-- GLSZM --
+	
+GLSZM_GLN	#	GLNU	--
+GLSZM_GLNN	#	GLNUN	--
+GLSZM_GLV	#	GLV	--
+GLSZM_HGLZE	#	HGLZE	--
+GLSZM_LAE	#	LAE	--
+GLSZM_LAHGLE	#	LAHGLE	--
+GLSZM_LALGLE	#	LALGLE	--
+GLSZM_LGLZE	#	LGLZE	--
+GLSZM_SZN	#	SZNU	--
+GLSZM_SZNN	#	SZNUN	--
+GLSZM_SAE	#	SAE	--
+GLSZM_SAHGLE	#	SAHGLE	--
+GLSZM_SALGLE	#	SALGLE	--
+GLSZM_ZE	#	ZE	--
+GLSZM_ZP	#	ZP	--
+GLSZM_ZV	#	Zone variance	--
+

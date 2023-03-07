@@ -1,0 +1,14 @@
+# file radj_shape.features
+
+	#-- Shape --
+
+AREA_PIXELS_COUNT	#	Area	
+BBOX_HEIGHT			#	BB Height	
+BBOX_WIDTH			#	BB Width	
+CIRCULARITY			#	Circularity, formfactor	
+ELONGATION			#	Elongation	
+MAJOR_AXIS_LENGTH	#	Major axis length/min BB length	
+MINOR_AXIS_LENGTH	#	Minor axis length/Min BB width	
+PERIMETER			#	Perimeter	
+
+

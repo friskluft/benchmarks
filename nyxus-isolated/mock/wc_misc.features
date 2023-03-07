@@ -1,0 +1,34 @@
+# file wc_misc.features
+
+#-- Intensity distribution --
+	ZERNIKE2D	#	Zernike
+
+#-- Neighbors --
+	NUM_NEIGHBORS	#	Num neighbors
+	CLOSEST_NEIGHBOR1_ANG	#	1st closest angle
+
+#-- Mesodescriptors --
+	EROSIONS_2_VANISH	#	Erosions to vanish
+	EROSIONS_2_VANISH_COMPLEMENT	#	Eros to vanish compl
+
+#-- Microdescriptors --
+	FRACT_DIM_BOXCOUNT	#	Fractal dim boxcounting
+	FRACT_DIM_PERIMETER	#	Fractal dim perimeter
+
+#-- Statistical lengths --
+	MAX_FERET_ANGLE	#	Feret max angle
+
+#-- Feret min coordinates --
+	MAXCHORDS_MAX	#	Maxchords max
+	MAXCHORDS_MEAN	#	Maxchords mean
+	MAXCHORDS_MEDIAN	#	Maxchords median
+	MAXCHORDS_MIN	#	Maxchords min
+	MAXCHORDS_MODE	#	Maxchords mode
+	MAXCHORDS_STDDEV	#	Maxchords stddev
+	ALLCHORDS_MAX	#	Allchords max
+	ALLCHORDS_MEAN	#	Allchords mean
+	ALLCHORDS_MEDIAN	#	Allchords median
+	ALLCHORDS_MIN	#	Allchords min
+	ALLCHORDS_MODE	#	Allchords mode
+	ALLCHORDS_STDDEV	#	Allchords stddev
+

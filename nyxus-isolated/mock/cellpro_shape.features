@@ -1,0 +1,20 @@
+# file cellpro_shape.features
+
+# -- Shape --
+
+AREA_PIXELS_COUNT	#	Area
+CENTROID_X	#	Centroid X
+CENTROID_Y	#	Centroid Y
+CIRCULARITY	#	Circularity, formfactor
+COMPACTNESS	#	Compactness
+ECCENTRICITY	#	Eccentricity
+EXTENT		#	Extent
+EULER_NUMBER	#	Euler number
+MAJOR_AXIS_LENGTH	#	Major axis length/min BB length
+MASS_DISPLACEMENT	#	Mass displacement
+ROI_RADIUS_MAX	#	Max radius
+ROI_RADIUS_MEDIAN	#	Median radius
+MINOR_AXIS_LENGTH	#	Minor axis length/Min BB width
+ORIENTATION	#	Orientation
+PERIMETER	#	Perimeter
+SOLIDITY	#	Solidity

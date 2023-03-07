@@ -1,0 +1,22 @@
+# file pyradiomics_inten.features
+
+	#-- 2D intensity --
+
+ENERGY				#	Energy	
+ENTROPY				#	Entropy	
+INTERQUARTILE_RANGE		#	IQR	
+KURTOSIS			#	Kurtosis	
+MAX				#	Max	
+MEAN				#	Mean	
+MEAN_ABSOLUTE_DEVIATION		#	MAD	
+MEDIAN				#	Median	
+MIN				#	Min	
+P01, P10, P25, P75, P90, P99	#	\%tiles	2
+RANGE				#	Range	
+ROBUST_MEAN_ABSOLUTE_DEVIATION	#	RMAD	
+ROOT_MEAN_SQUARED		#	RMS	
+STANDARD_DEVIATION		#	STD	
+SKEWNESS			#	Skewness	
+UNIFORMITY			#	Uniformity	
+
+

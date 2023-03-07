@@ -1,0 +1,19 @@
+# file radj_inten.features
+
+#-- 2D intensity --
+
+ENERGY			#	Energy	
+INTERQUARTILE_RANGE	#	IQR	
+KURTOSIS		#	Kurtosis	
+MAX			#	Max	
+MEAN			#	Mean	
+MEAN_ABSOLUTE_DEVIATION	#	MAD	
+MEDIAN			#	Median	
+MIN			#	Min	
+P01, P10, P25, P75, P90, P99	#	\%tiles	10,90
+RANGE			#	Range	
+ROOT_MEAN_SQUARED	#	RMS	
+STANDARD_DEVIATION	#	STD	
+SKEWNESS		#	Skewness	
+	
+

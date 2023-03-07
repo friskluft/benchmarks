@@ -1,0 +1,26 @@
+# file matlab_inten.features
+
+	# -- 2D intensity --
+		
+ENTROPY	#	Entropy
+INTERQUARTILE_RANGE	#	IQR
+KURTOSIS	#	Kurtosis
+MAX	#	Max
+MEAN	#	Mean
+MEAN_ABSOLUTE_DEVIATION	#	MAD
+MEDIAN	#	Median
+MIN	#	Min
+MODE	#	Mode
+P01	#	\%tile	#EDIT < V 
+P10	#	\%tile
+P25	#	\%tile
+P75	#	\%tile
+P90	#	\%tile
+P99	#	\%tile
+RANGE	#	Range
+ROOT_MEAN_SQUARED	#	RMS
+STANDARD_DEVIATION	#	STD
+SKEWNESS	#	Skewness
+WEIGHTED_CENTROID_X	#	WCX
+WEIGHTED_CENTROID_Y	#	WCY
+

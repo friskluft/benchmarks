@@ -1,0 +1,10 @@
+# file cellpro_neighbor.features
+
+# -- Neighbors --
+
+NUM_NEIGHBORS			#	Num neighbors	yes
+PERCENT_TOUCHING		#	\% touching	yes
+CLOSEST_NEIGHBOR1_DIST	#	1st closest dist	yes
+CLOSEST_NEIGHBOR2_DIST	#	2nd closest dist	yes
+CLOSEST_NEIGHBOR1_ANG	#	1st closest angle	yes
+
