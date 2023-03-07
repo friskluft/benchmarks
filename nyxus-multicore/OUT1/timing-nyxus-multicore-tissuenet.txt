@@ -8,3 +8,7 @@
 .* -- 8 threads -- 1568 seconds
 .* -- 9 threads -- 1599 seconds
 .* -- 10 threads -- 1584 seconds
+.* -- 11 threads -- 1588 seconds
+.* -- 12 threads -- 1604 seconds
+.* -- 13 threads -- 1595 seconds
+.* -- 14 threads -- 1591 seconds
