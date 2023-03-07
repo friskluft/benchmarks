@@ -1,0 +1,23 @@
+# potentially huge files
+NyxusFeatures.csv
+
+# huge file 
+cellprofiler/SCRATCHSPACE/OUTPUT/cp_labelobj.csv
+
+cellprofiler/nyxus
+cellprofiler/env*
+cellprofiler/SCRATCHSPACE/DATA
+imea/env_imea2/
+mitk/VENV1/
+nist-feature2djava/nyxus*
+
+# PyRadiomics feature output can potentially be huge
+pyradiomics/OUTPUT-pyradiomics
+
+pyradiomics/*.nrrd
+
+*.jar
+
+
+
+
