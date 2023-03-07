@@ -1,0 +1,2 @@
+30000 Mb -- 8683 seconds
+1000 Mb -- 11734 seconds

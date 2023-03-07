@@ -1,0 +1,3 @@
+20000 Mb -- 8740 seconds
+10000 Mb -- 8919 seconds
+5000 Mb -- 9250 seconds

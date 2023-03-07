@@ -1,0 +1,4 @@
+synthetic_nrois=100000_roiarea=20000\.tif -- 20000 Mb -- 17978 seconds
+synthetic_nrois=100000_roiarea=20000\.tif -- 10000 Mb -- 18364 seconds
+synthetic_nrois=100000_roiarea=20000\.tif -- 5000 Mb -- 19189 seconds
+synthetic_nrois=100000_roiarea=20000\.tif -- 1000 Mb -- 25127 seconds
