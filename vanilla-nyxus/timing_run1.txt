@@ -1,0 +1,2 @@
+using GPU:  1568 seconds
+without GPU:  1773 seconds
