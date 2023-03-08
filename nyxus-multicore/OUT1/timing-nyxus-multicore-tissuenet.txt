@@ -12,3 +12,5 @@
 .* -- 12 threads -- 1604 seconds
 .* -- 13 threads -- 1595 seconds
 .* -- 14 threads -- 1591 seconds
+.* -- 15 threads -- 1595 seconds
+.* -- 16 threads -- 1601 seconds
