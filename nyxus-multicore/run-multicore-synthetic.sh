@@ -1,12 +1,18 @@
 #!/bin/bash
 
 EXPERIMENT_NAME="nyxus-multicore-synthetic"
-DATADIR="/home/ec2-user/work/data/synthetic2"
-OUTDIR="./OUT1"
-NYXUSDIR="/home/ec2-user/work/nyxus/BUILD1"
 
-# series 1: ROI area=10K
-FPATT="synthetic_nrois=10000_roiarea=10000\.tif"
+# EC2
+# DATADIR="/home/ec2-user/work/data/synthetic2"
+# NYXUSDIR="/home/ec2-user/work/nyxus/BUILD1"
+# MPB
+DATADIR="/Users/natfugl/work/axle/data/synthetic1"
+NYXUSDIR="/Users/natfugl/work/axle/nyxus-004/BUILD1"
+
+OUTDIR="./OUT1"
+
+# series 1: ROI area=1K
+FPATT="synthetic_nrois=1000_roiarea=10000\.tif"
 # FPATT="synthetic_nrois=100000_roiarea=10000\.tif"
 # FPATT="synthetic_nrois=100000_roiarea=20000\.tif"
 # FPATT="synthetic_nrois=100000_roiarea=40000\.tif"
@@ -24,19 +30,19 @@ mkdir -p $OUTDIR
 declare -a arr=(
 "1"
 "2"
-"3"
+#-- "3"
 "4"
-"5"
+#-- "5"
 "6"
-"7"
+#-- "7"
 "8"
-"9"
+#-- "9"
 "10"
-"11"
+#-- "11"
 "12"
-"13"
+#-- "13"
 "14"
-"15"
+#-- "15"
 "16"
 )
 
@@ -57,7 +63,7 @@ do
     echo "$FPATT -- $i threads -- $(($end-$start)) seconds" >> $OUTDIR/timing-$EXPERIMENT_NAME.txt
 
     # Save detailed timing
-    mv $OUTDIR/*nyxustiming*.csv  "$OUTDIR/detailedtiming_$EXPERIMENT_NAME_$FPATT_$i_threads.csv"
+    #	mv $OUTDIR/*nyxustiming*.csv  "$OUTDIR/detailedtiming_$EXPERIMENT_NAME_$FPATT_$i_threads.csv"
 done
 
 

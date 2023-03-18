@@ -1,9 +1,15 @@
 #!/bin/bash
 
 EXPERIMENT_NAME="nyxus-multicore-tissuenet"
-DATADIR="/home/ec2-user/work/data/tissuenet"
+
+# EC2
+#    DATADIR="/home/ec2-user/work/data/tissuenet"
+#    NYXUSDIR="/home/ec2-user/work/nyxus/BUILD1"
+# MPB
+DATADIR="/Users/natfugl/work/axle/data/tissuenet"
+NYXUSDIR="/Users/natfugl/work/axle/nyxus-004/BUILD1"
+
 OUTDIR="./OUT1"
-NYXUSDIR="/home/ec2-user/work/nyxus/BUILD1"
 
 # series 1: ROI area=10K
 # FPATT="synthetic_nrois=10000_roiarea=10000\.tif"
@@ -25,19 +31,19 @@ mkdir -p $OUTDIR
 declare -a arr=(
 "1"
 "2"
-"3"
+#--- "3"
 "4"
-"5"
+#--- "5"
 "6"
-"7"
+#--- "7"
 "8"
-"9"
+#--- "9"
 "10"
-"11"
+#--- "11"
 "12"
-"13"
+#--- "13"
 "14"
-"15"
+#--- "15"
 "16"
 )
 
@@ -51,7 +57,7 @@ done
 for i in "${arr[@]}"
 do
     start=$(date +%s)
-    $NYXUSDIR/nyxus --exclusivetiming=false --useGpu=true --verbose=3 --features=*ALL* --intDir=$DATADIR/int --segDir=$DATADIR/seg --outDir=$OUTDIR --filePattern=$FPATT --csvFile=singlecsv --loaderThreads=1 --reduceThreads=$i
+    $NYXUSDIR/nyxus --exclusivetiming=false --useGpu=true --verbose=0 --features=*ALL* --intDir=$DATADIR/int --segDir=$DATADIR/seg --outDir=$OUTDIR --filePattern=$FPATT --csvFile=singlecsv --loaderThreads=1 --reduceThreads=$i
     end=$(date +%s)
 
     # Register time

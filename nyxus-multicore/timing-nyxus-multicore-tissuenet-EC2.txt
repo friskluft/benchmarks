@@ -1,0 +1,16 @@
+.* -- 1 threads -- 1888 seconds
+.* -- 2 threads -- 1610 seconds
+.* -- 3 threads -- 1621 seconds
+.* -- 4 threads -- 1558 seconds
+.* -- 5 threads -- 1571 seconds
+.* -- 6 threads -- 1569 seconds
+.* -- 7 threads -- 1575 seconds
+.* -- 8 threads -- 1568 seconds
+.* -- 9 threads -- 1599 seconds
+.* -- 10 threads -- 1584 seconds
+.* -- 11 threads -- 1588 seconds
+.* -- 12 threads -- 1604 seconds
+.* -- 13 threads -- 1595 seconds
+.* -- 14 threads -- 1591 seconds
+.* -- 15 threads -- 1595 seconds
+.* -- 16 threads -- 1601 seconds
