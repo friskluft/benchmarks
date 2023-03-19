@@ -1,0 +1,9 @@
+synthetic_nrois=20000_roiarea=1000\.tif -- 1 threads -- 361 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 2 threads -- 189 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 4 threads -- 100 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 6 threads -- 69 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 8 threads -- 55 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 10 threads -- 51 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 12 threads -- 52 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 14 threads -- 53 seconds
+synthetic_nrois=20000_roiarea=1000\.tif -- 16 threads -- 52 seconds

@@ -11,12 +11,7 @@ NYXUSDIR="/Users/natfugl/work/axle/nyxus-004/BUILD1"
 
 OUTDIR="./OUT1"
 
-# series 1: ROI area=1K
-FPATT="synthetic_nrois=1000_roiarea=10000\.tif"
-# FPATT="synthetic_nrois=100000_roiarea=10000\.tif"
-# FPATT="synthetic_nrois=100000_roiarea=20000\.tif"
-# FPATT="synthetic_nrois=100000_roiarea=40000\.tif"
-# FPATT="synthetic_nrois=100000_roiarea=60000\.tif"
+FPATT="synthetic_nrois=10000_roiarea=1000\.tif"
 
 ls -s -a $DATADIR
 
