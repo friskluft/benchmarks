@@ -1,0 +1,2028 @@
+natfugl@andriysmbp nyxus-multicore % 
+natfugl@andriysmbp nyxus-multicore % 
+natfugl@andriysmbp nyxus-multicore % 
+natfugl@andriysmbp nyxus-multicore % 
+natfugl@andriysmbp nyxus-multicore % ./run-multicore-synthetic.sh               
+total 4022088
+     0 .					  5296 synthetic_nrois=10000_roiarea=500.tif	    72 synthetic_nrois=100_roiarea=500.tif	    24 synthetic_nrois=500_roiarea=10.tif
+     0 ..					    48 synthetic_nrois=1000_roiarea=10.tif	     8 synthetic_nrois=10_roiarea=10.tif	    88 synthetic_nrois=500_roiarea=100.tif
+    16 .DS_Store				   168 synthetic_nrois=1000_roiarea=100.tif	     8 synthetic_nrois=10_roiarea=100.tif	   504 synthetic_nrois=500_roiarea=1000.tif
+     0 int					   984 synthetic_nrois=1000_roiarea=1000.tif	    24 synthetic_nrois=10_roiarea=1000.tif	  4136 synthetic_nrois=500_roiarea=10000.tif
+     0 seg					  7944 synthetic_nrois=1000_roiarea=10000.tif	   152 synthetic_nrois=10_roiarea=10000.tif	 39048 synthetic_nrois=500_roiarea=100000.tif
+  3952 synthetic_nrois=100000_roiarea=10.tif	 75184 synthetic_nrois=1000_roiarea=100000.tif	  1544 synthetic_nrois=10_roiarea=100000.tif	377816 synthetic_nrois=500_roiarea=1000000.tif
+ 15736 synthetic_nrois=100000_roiarea=100.tif	726832 synthetic_nrois=1000_roiarea=1000000.tif	 14552 synthetic_nrois=10_roiarea=1000000.tif	   288 synthetic_nrois=500_roiarea=500.tif
+ 94456 synthetic_nrois=100000_roiarea=1000.tif	 15512 synthetic_nrois=1000_roiarea=20000.tif	    16 synthetic_nrois=10_roiarea=500.tif	     8 synthetic_nrois=50_roiarea=10.tif
+761952 synthetic_nrois=100000_roiarea=10000.tif	   552 synthetic_nrois=1000_roiarea=500.tif	    40 synthetic_nrois=1_roiarea=10000.tif	    16 synthetic_nrois=50_roiarea=100.tif
+ 52904 synthetic_nrois=100000_roiarea=500.tif	     8 synthetic_nrois=100_roiarea=10.tif	  3120 synthetic_nrois=1_roiarea=1000000.tif	    72 synthetic_nrois=50_roiarea=1000.tif
+   400 synthetic_nrois=10000_roiarea=10.tif	    24 synthetic_nrois=100_roiarea=100.tif	 18992 synthetic_nrois=20000_roiarea=1000.tif	   552 synthetic_nrois=50_roiarea=10000.tif
+  1584 synthetic_nrois=10000_roiarea=100.tif	   120 synthetic_nrois=100_roiarea=1000.tif	 19712 synthetic_nrois=500000_roiarea=10.tif	  5416 synthetic_nrois=50_roiarea=100000.tif
+  9520 synthetic_nrois=10000_roiarea=1000.tif	   976 synthetic_nrois=100_roiarea=10000.tif	 78568 synthetic_nrois=500000_roiarea=100.tif	 51312 synthetic_nrois=50_roiarea=1000000.tif
+ 76392 synthetic_nrois=10000_roiarea=10000.tif	  9592 synthetic_nrois=100_roiarea=100000.tif	472144 synthetic_nrois=500000_roiarea=1000.tif	    40 synthetic_nrois=50_roiarea=500.tif
+718392 synthetic_nrois=10000_roiarea=100000.tif	 91216 synthetic_nrois=100_roiarea=1000000.tif	264056 synthetic_nrois=500000_roiarea=500.tif
++ rm -r ./OUT1
++ mkdir -p ./OUT1
++ arr=("1" "2" "4" "6" "8" "10" "12" "14" "16")
++ declare -a arr
++ for i in '"${arr[@]}"'
++ echo 1
+1
++ for i in '"${arr[@]}"'
++ echo 2
+2
++ for i in '"${arr[@]}"'
++ echo 4
+4
++ for i in '"${arr[@]}"'
++ echo 6
+6
++ for i in '"${arr[@]}"'
++ echo 8
+8
++ for i in '"${arr[@]}"'
++ echo 10
+10
++ for i in '"${arr[@]}"'
++ echo 12
+12
++ for i in '"${arr[@]}"'
++ echo 14
+14
++ for i in '"${arr[@]}"'
++ echo 16
+16
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679227693
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=1
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 1
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	1
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:08:13
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 28 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 615255 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 54733 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 183 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 635816 us
+Morphology/Basic/E/#4aaaea
+	= 87555 us
+Morphology/Ellipticity/E/#4aaaea
+	= 19354 us
+Morphology/Contour/C/#4aaaea
+	= 337065 us
+Morphology/Hull/H/#4aaaea
+	= 75940 us
+Morphology/Extrema/Ex/#4aaaea
+	= 15750 us
+Morphology/Euler/Eu/#4aaaea
+	= 72322 us
+Morphology/Feret/F/#4aaaea
+	= 206362 us
+Morphology/Martin/M/#4aaaea
+	= 203908 us
+Morphology/Nassenstein/N/#4aaaea
+	= 203687 us
+Morphology/Chords/Ch/#4aaaea
+	= 2.2711e+06 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 5146 us
+Morphology/RoiR/R/#4aaaea
+	= 1.12471e+06 us
+Morphology/Erosion/Er/#4aaaea
+	= 2.12839e+06 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 163803 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 371091 us
+Texture/GLRLM/RL/#bbbbbb
+	= 2.47865e+06 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 6.31446e+07 us
+Texture/GLDM/D/#bbbbbb
+	= 893314 us
+Texture/NGTDM/NG/#bbbbbb
+	= 1.61014e+06 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.09191e+07 us
+Gabor/Gabor/Gabor/#f58231
+	= 8.70742e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 855992 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 1.3632e+06 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 193162 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 189 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 182 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 177.125
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	49.16%	8.70742e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	28
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	0.35%	615255
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.03%	54733
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	183
+Intensity/Intensity/Int/#FFFF00	0.36%	635816
+Moments/Moments/2D moms/#FFFACD	6.16%	1.09191e+07
+Morphology/Basic/E/#4aaaea	0.05%	87555
+Morphology/Chords/Ch/#4aaaea	1.28%	2.2711e+06
+Morphology/Contour/C/#4aaaea	0.19%	337065
+Morphology/Ellipticity/E/#4aaaea	0.01%	19354
+Morphology/Erosion/Er/#4aaaea	1.2%	2.12839e+06
+Morphology/Euler/Eu/#4aaaea	0.04%	72322
+Morphology/Extrema/Ex/#4aaaea	0.01%	15750
+Morphology/Feret/F/#4aaaea	0.12%	206362
+Morphology/Fractal dimension/Fd/#4aaaea	0.09%	163803
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0%	5517
+Morphology/Hull/H/#4aaaea	0.04%	75940
+Morphology/Martin/M/#4aaaea	0.12%	203908
+Morphology/Nassenstein/N/#4aaaea	0.11%	203687
+Morphology/RoiR/R/#4aaaea	0.63%	1.12471e+06
+Neighbors/Neighbors/N/#FF69B4	0.11%	193162
+RDistribution/Rdist/Rd/#00FFFF	0.77%	1.3632e+06
+RDistribution/Zernike/Rz/#00FFFF	0.48%	855992
+Texture/GLCM/GLCM/#bbbbbb	0.21%	371091
+Texture/GLDM/D/#bbbbbb	0.5%	893314
+Texture/GLRLM/RL/#bbbbbb	1.4%	2.47865e+06
+Texture/GLSZM/SZ/#bbbbbb	35.65%	6.31446e+07
+Texture/NGTDM/NG/#bbbbbb	0.91%	1.61014e+06
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:08:13
+>>> FINISHED >>>	2023-03-19 08:11:12
+++ date +%s
++ end=1679227872
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 1 threads -- 179 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679227872
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=2
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 2
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	2
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:11:12
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 12 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 568992 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53394 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 163 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 324173 us
+Morphology/Basic/E/#4aaaea
+	= 44684 us
+Morphology/Ellipticity/E/#4aaaea
+	= 10467 us
+Morphology/Contour/C/#4aaaea
+	= 173345 us
+Morphology/Hull/H/#4aaaea
+	= 39303 us
+Morphology/Extrema/Ex/#4aaaea
+	= 8918 us
+Morphology/Euler/Eu/#4aaaea
+	= 38150 us
+Morphology/Feret/F/#4aaaea
+	= 106935 us
+Morphology/Martin/M/#4aaaea
+	= 105289 us
+Morphology/Nassenstein/N/#4aaaea
+	= 106604 us
+Morphology/Chords/Ch/#4aaaea
+	= 1.17024e+06 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 2907 us
+Morphology/RoiR/R/#4aaaea
+	= 582723 us
+Morphology/Erosion/Er/#4aaaea
+	= 1.09036e+06 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 84150 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 190400 us
+Texture/GLRLM/RL/#bbbbbb
+	= 1.28513e+06 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 2.1438e+08 us
+Texture/GLDM/D/#bbbbbb
+	= 475632 us
+Texture/NGTDM/NG/#bbbbbb
+	= 848146 us
+Moments/Moments/2D moms/#FFFACD
+	= 5.63109e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 4.53363e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 439951 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 707601 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 188974 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 112 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 127 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 273.994
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	16.55%	4.53363e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	12
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	0.21%	568992
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.02%	53394
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	163
+Intensity/Intensity/Int/#FFFF00	0.12%	324173
+Moments/Moments/2D moms/#FFFACD	2.06%	5.63109e+06
+Morphology/Basic/E/#4aaaea	0.02%	44684
+Morphology/Chords/Ch/#4aaaea	0.43%	1.17024e+06
+Morphology/Contour/C/#4aaaea	0.06%	173345
+Morphology/Ellipticity/E/#4aaaea	0%	10467
+Morphology/Erosion/Er/#4aaaea	0.4%	1.09036e+06
+Morphology/Euler/Eu/#4aaaea	0.01%	38150
+Morphology/Extrema/Ex/#4aaaea	0%	8918
+Morphology/Feret/F/#4aaaea	0.04%	106935
+Morphology/Fractal dimension/Fd/#4aaaea	0.03%	84150
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0%	3146
+Morphology/Hull/H/#4aaaea	0.01%	39303
+Morphology/Martin/M/#4aaaea	0.04%	105289
+Morphology/Nassenstein/N/#4aaaea	0.04%	106604
+Morphology/RoiR/R/#4aaaea	0.21%	582723
+Neighbors/Neighbors/N/#FF69B4	0.07%	188974
+RDistribution/Rdist/Rd/#00FFFF	0.26%	707601
+RDistribution/Zernike/Rz/#00FFFF	0.16%	439951
+Texture/GLCM/GLCM/#bbbbbb	0.07%	190400
+Texture/GLDM/D/#bbbbbb	0.17%	475632
+Texture/GLRLM/RL/#bbbbbb	0.47%	1.28513e+06
+Texture/GLSZM/SZ/#bbbbbb	78.24%	2.1438e+08
+Texture/NGTDM/NG/#bbbbbb	0.31%	848146
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:11:12
+>>> FINISHED >>>	2023-03-19 08:15:48
+++ date +%s
++ end=1679228148
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 2 threads -- 276 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228148
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=4
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 4
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	4
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:15:48
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 12 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 582701 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53512 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 157 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 166411 us
+Morphology/Basic/E/#4aaaea
+	= 22757 us
+Morphology/Ellipticity/E/#4aaaea
+	= 5831 us
+Morphology/Contour/C/#4aaaea
+	= 88763 us
+Morphology/Hull/H/#4aaaea
+	= 20267 us
+Morphology/Extrema/Ex/#4aaaea
+	= 5591 us
+Morphology/Euler/Eu/#4aaaea
+	= 19283 us
+Morphology/Feret/F/#4aaaea
+	= 55037 us
+Morphology/Martin/M/#4aaaea
+	= 54682 us
+Morphology/Nassenstein/N/#4aaaea
+	= 54609 us
+Morphology/Chords/Ch/#4aaaea
+	= 600489 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 2104 us
+Morphology/RoiR/R/#4aaaea
+	= 299561 us
+Morphology/Erosion/Er/#4aaaea
+	= 560991 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 43598 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 98180 us
+Texture/GLRLM/RL/#bbbbbb
+	= 667631 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 1.69175e+07 us
+Texture/GLDM/D/#bbbbbb
+	= 237667 us
+Texture/NGTDM/NG/#bbbbbb
+	= 431792 us
+Moments/Moments/2D moms/#FFFACD
+	= 2.87652e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 2.30629e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 226738 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 364468 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 193435 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 166 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 102 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 47.7134
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	48.34%	2.30629e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	12
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	1.22%	582701
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.11%	53512
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	157
+Intensity/Intensity/Int/#FFFF00	0.35%	166411
+Moments/Moments/2D moms/#FFFACD	6.03%	2.87652e+06
+Morphology/Basic/E/#4aaaea	0.05%	22757
+Morphology/Chords/Ch/#4aaaea	1.26%	600489
+Morphology/Contour/C/#4aaaea	0.19%	88763
+Morphology/Ellipticity/E/#4aaaea	0.01%	5831
+Morphology/Erosion/Er/#4aaaea	1.18%	560991
+Morphology/Euler/Eu/#4aaaea	0.04%	19283
+Morphology/Extrema/Ex/#4aaaea	0.01%	5591
+Morphology/Feret/F/#4aaaea	0.12%	55037
+Morphology/Fractal dimension/Fd/#4aaaea	0.09%	43598
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0%	2372
+Morphology/Hull/H/#4aaaea	0.04%	20267
+Morphology/Martin/M/#4aaaea	0.11%	54682
+Morphology/Nassenstein/N/#4aaaea	0.11%	54609
+Morphology/RoiR/R/#4aaaea	0.63%	299561
+Neighbors/Neighbors/N/#FF69B4	0.41%	193435
+RDistribution/Rdist/Rd/#00FFFF	0.76%	364468
+RDistribution/Zernike/Rz/#00FFFF	0.48%	226738
+Texture/GLCM/GLCM/#bbbbbb	0.21%	98180
+Texture/GLDM/D/#bbbbbb	0.5%	237667
+Texture/GLRLM/RL/#bbbbbb	1.4%	667631
+Texture/GLSZM/SZ/#bbbbbb	35.46%	1.69175e+07
+Texture/NGTDM/NG/#bbbbbb	0.9%	431792
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:15:48
+>>> FINISHED >>>	2023-03-19 08:16:37
+++ date +%s
++ end=1679228197
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 4 threads -- 49 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228197
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=6
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 6
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	6
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:16:37
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 9 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 569870 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53020 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 162 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 111227 us
+Morphology/Basic/E/#4aaaea
+	= 15509 us
+Morphology/Ellipticity/E/#4aaaea
+	= 4314 us
+Morphology/Contour/C/#4aaaea
+	= 62104 us
+Morphology/Hull/H/#4aaaea
+	= 13540 us
+Morphology/Extrema/Ex/#4aaaea
+	= 4499 us
+Morphology/Euler/Eu/#4aaaea
+	= 12977 us
+Morphology/Feret/F/#4aaaea
+	= 38274 us
+Morphology/Martin/M/#4aaaea
+	= 38287 us
+Morphology/Nassenstein/N/#4aaaea
+	= 37674 us
+Morphology/Chords/Ch/#4aaaea
+	= 401797 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 1622 us
+Morphology/RoiR/R/#4aaaea
+	= 198837 us
+Morphology/Erosion/Er/#4aaaea
+	= 374760 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 29295 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 65501 us
+Texture/GLRLM/RL/#bbbbbb
+	= 445221 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 1.13243e+07 us
+Texture/GLDM/D/#bbbbbb
+	= 158762 us
+Texture/NGTDM/NG/#bbbbbb
+	= 288176 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.92068e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.53451e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 151397 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 243112 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 195545 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 196 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 98 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 32.1059
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	47.8%	1.53451e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	9
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	1.77%	569870
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.17%	53020
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	162
+Intensity/Intensity/Int/#FFFF00	0.35%	111227
+Moments/Moments/2D moms/#FFFACD	5.98%	1.92068e+06
+Morphology/Basic/E/#4aaaea	0.05%	15509
+Morphology/Chords/Ch/#4aaaea	1.25%	401797
+Morphology/Contour/C/#4aaaea	0.19%	62104
+Morphology/Ellipticity/E/#4aaaea	0.01%	4314
+Morphology/Erosion/Er/#4aaaea	1.17%	374760
+Morphology/Euler/Eu/#4aaaea	0.04%	12977
+Morphology/Extrema/Ex/#4aaaea	0.01%	4499
+Morphology/Feret/F/#4aaaea	0.12%	38274
+Morphology/Fractal dimension/Fd/#4aaaea	0.09%	29295
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	1916
+Morphology/Hull/H/#4aaaea	0.04%	13540
+Morphology/Martin/M/#4aaaea	0.12%	38287
+Morphology/Nassenstein/N/#4aaaea	0.12%	37674
+Morphology/RoiR/R/#4aaaea	0.62%	198837
+Neighbors/Neighbors/N/#FF69B4	0.61%	195545
+RDistribution/Rdist/Rd/#00FFFF	0.76%	243112
+RDistribution/Zernike/Rz/#00FFFF	0.47%	151397
+Texture/GLCM/GLCM/#bbbbbb	0.2%	65501
+Texture/GLDM/D/#bbbbbb	0.49%	158762
+Texture/GLRLM/RL/#bbbbbb	1.39%	445221
+Texture/GLSZM/SZ/#bbbbbb	35.27%	1.13243e+07
+Texture/NGTDM/NG/#bbbbbb	0.9%	288176
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:16:37
+>>> FINISHED >>>	2023-03-19 08:17:11
+++ date +%s
++ end=1679228232
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 6 threads -- 35 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228232
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=8
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 8
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	8
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:17:12
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 11 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 571129 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53320 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 149 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 85599 us
+Morphology/Basic/E/#4aaaea
+	= 11722 us
+Morphology/Ellipticity/E/#4aaaea
+	= 3823 us
+Morphology/Contour/C/#4aaaea
+	= 67957 us
+Morphology/Hull/H/#4aaaea
+	= 10931 us
+Morphology/Extrema/Ex/#4aaaea
+	= 4023 us
+Morphology/Euler/Eu/#4aaaea
+	= 11086 us
+Morphology/Feret/F/#4aaaea
+	= 29862 us
+Morphology/Martin/M/#4aaaea
+	= 27604 us
+Morphology/Nassenstein/N/#4aaaea
+	= 28109 us
+Morphology/Chords/Ch/#4aaaea
+	= 306566 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 1333 us
+Morphology/RoiR/R/#4aaaea
+	= 152525 us
+Morphology/Erosion/Er/#4aaaea
+	= 286431 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 22949 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 50216 us
+Texture/GLRLM/RL/#bbbbbb
+	= 339425 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 8.58876e+06 us
+Texture/GLDM/D/#bbbbbb
+	= 120075 us
+Texture/NGTDM/NG/#bbbbbb
+	= 219561 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.47485e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.1795e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 116013 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 182886 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 194904 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 188 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 122 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 24.7571
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	47.64%	1.1795e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	11
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	2.31%	571129
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.22%	53320
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	149
+Intensity/Intensity/Int/#FFFF00	0.35%	85599
+Moments/Moments/2D moms/#FFFACD	5.96%	1.47485e+06
+Morphology/Basic/E/#4aaaea	0.05%	11722
+Morphology/Chords/Ch/#4aaaea	1.24%	306566
+Morphology/Contour/C/#4aaaea	0.27%	67957
+Morphology/Ellipticity/E/#4aaaea	0.02%	3823
+Morphology/Erosion/Er/#4aaaea	1.16%	286431
+Morphology/Euler/Eu/#4aaaea	0.04%	11086
+Morphology/Extrema/Ex/#4aaaea	0.02%	4023
+Morphology/Feret/F/#4aaaea	0.12%	29862
+Morphology/Fractal dimension/Fd/#4aaaea	0.09%	22949
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	1643
+Morphology/Hull/H/#4aaaea	0.04%	10931
+Morphology/Martin/M/#4aaaea	0.11%	27604
+Morphology/Nassenstein/N/#4aaaea	0.11%	28109
+Morphology/RoiR/R/#4aaaea	0.62%	152525
+Neighbors/Neighbors/N/#FF69B4	0.79%	194904
+RDistribution/Rdist/Rd/#00FFFF	0.74%	182886
+RDistribution/Zernike/Rz/#00FFFF	0.47%	116013
+Texture/GLCM/GLCM/#bbbbbb	0.2%	50216
+Texture/GLDM/D/#bbbbbb	0.49%	120075
+Texture/GLRLM/RL/#bbbbbb	1.37%	339425
+Texture/GLSZM/SZ/#bbbbbb	34.69%	8.58876e+06
+Texture/NGTDM/NG/#bbbbbb	0.89%	219561
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:17:12
+>>> FINISHED >>>	2023-03-19 08:17:38
+++ date +%s
++ end=1679228258
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 8 threads -- 26 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228258
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=10
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 10
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	10
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:17:38
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 14 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 578559 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53782 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 148 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 88751 us
+Morphology/Basic/E/#4aaaea
+	= 14514 us
+Morphology/Ellipticity/E/#4aaaea
+	= 3884 us
+Morphology/Contour/C/#4aaaea
+	= 55331 us
+Morphology/Hull/H/#4aaaea
+	= 13334 us
+Morphology/Extrema/Ex/#4aaaea
+	= 4022 us
+Morphology/Euler/Eu/#4aaaea
+	= 12437 us
+Morphology/Feret/F/#4aaaea
+	= 30401 us
+Morphology/Martin/M/#4aaaea
+	= 29402 us
+Morphology/Nassenstein/N/#4aaaea
+	= 31365 us
+Morphology/Chords/Ch/#4aaaea
+	= 293449 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 1495 us
+Morphology/RoiR/R/#4aaaea
+	= 144801 us
+Morphology/Erosion/Er/#4aaaea
+	= 280989 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 26628 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 55069 us
+Texture/GLRLM/RL/#bbbbbb
+	= 320760 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 7.81926e+06 us
+Texture/GLDM/D/#bbbbbb
+	= 115239 us
+Texture/NGTDM/NG/#bbbbbb
+	= 210674 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.43119e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.09439e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 113155 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 172452 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 200775 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 237 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 183 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 23.0462
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	47.49%	1.09439e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	14
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	2.51%	578559
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.23%	53782
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	148
+Intensity/Intensity/Int/#FFFF00	0.39%	88751
+Moments/Moments/2D moms/#FFFACD	6.21%	1.43119e+06
+Morphology/Basic/E/#4aaaea	0.06%	14514
+Morphology/Chords/Ch/#4aaaea	1.27%	293449
+Morphology/Contour/C/#4aaaea	0.24%	55331
+Morphology/Ellipticity/E/#4aaaea	0.02%	3884
+Morphology/Erosion/Er/#4aaaea	1.22%	280989
+Morphology/Euler/Eu/#4aaaea	0.05%	12437
+Morphology/Extrema/Ex/#4aaaea	0.02%	4022
+Morphology/Feret/F/#4aaaea	0.13%	30401
+Morphology/Fractal dimension/Fd/#4aaaea	0.12%	26628
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	1915
+Morphology/Hull/H/#4aaaea	0.06%	13334
+Morphology/Martin/M/#4aaaea	0.13%	29402
+Morphology/Nassenstein/N/#4aaaea	0.14%	31365
+Morphology/RoiR/R/#4aaaea	0.63%	144801
+Neighbors/Neighbors/N/#FF69B4	0.87%	200775
+RDistribution/Rdist/Rd/#00FFFF	0.75%	172452
+RDistribution/Zernike/Rz/#00FFFF	0.49%	113155
+Texture/GLCM/GLCM/#bbbbbb	0.24%	55069
+Texture/GLDM/D/#bbbbbb	0.5%	115239
+Texture/GLRLM/RL/#bbbbbb	1.39%	320760
+Texture/GLSZM/SZ/#bbbbbb	33.93%	7.81926e+06
+Texture/NGTDM/NG/#bbbbbb	0.91%	210674
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:17:38
+>>> FINISHED >>>	2023-03-19 08:18:03
+++ date +%s
++ end=1679228283
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 10 threads -- 25 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228283
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=12
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 12
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	12
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:18:03
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 10 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 570844 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53679 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 152 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 86583 us
+Morphology/Basic/E/#4aaaea
+	= 15249 us
+Morphology/Ellipticity/E/#4aaaea
+	= 4507 us
+Morphology/Contour/C/#4aaaea
+	= 55678 us
+Morphology/Hull/H/#4aaaea
+	= 13495 us
+Morphology/Extrema/Ex/#4aaaea
+	= 4185 us
+Morphology/Euler/Eu/#4aaaea
+	= 12919 us
+Morphology/Feret/F/#4aaaea
+	= 35573 us
+Morphology/Martin/M/#4aaaea
+	= 28879 us
+Morphology/Nassenstein/N/#4aaaea
+	= 30009 us
+Morphology/Chords/Ch/#4aaaea
+	= 287229 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 993 us
+Morphology/RoiR/R/#4aaaea
+	= 148323 us
+Morphology/Erosion/Er/#4aaaea
+	= 272039 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 27442 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 53667 us
+Texture/GLRLM/RL/#bbbbbb
+	= 333154 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 7.65394e+06 us
+Texture/GLDM/D/#bbbbbb
+	= 120039 us
+Texture/NGTDM/NG/#bbbbbb
+	= 204540 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.4141e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.10206e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 120926 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 177022 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 197094 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 198 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 180 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 22.9432
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	48.03%	1.10206e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	10
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	2.49%	570844
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.23%	53679
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	152
+Intensity/Intensity/Int/#FFFF00	0.38%	86583
+Moments/Moments/2D moms/#FFFACD	6.16%	1.4141e+06
+Morphology/Basic/E/#4aaaea	0.07%	15249
+Morphology/Chords/Ch/#4aaaea	1.25%	287229
+Morphology/Contour/C/#4aaaea	0.24%	55678
+Morphology/Ellipticity/E/#4aaaea	0.02%	4507
+Morphology/Erosion/Er/#4aaaea	1.19%	272039
+Morphology/Euler/Eu/#4aaaea	0.06%	12919
+Morphology/Extrema/Ex/#4aaaea	0.02%	4185
+Morphology/Feret/F/#4aaaea	0.16%	35573
+Morphology/Fractal dimension/Fd/#4aaaea	0.12%	27442
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	1371
+Morphology/Hull/H/#4aaaea	0.06%	13495
+Morphology/Martin/M/#4aaaea	0.13%	28879
+Morphology/Nassenstein/N/#4aaaea	0.13%	30009
+Morphology/RoiR/R/#4aaaea	0.65%	148323
+Neighbors/Neighbors/N/#FF69B4	0.86%	197094
+RDistribution/Rdist/Rd/#00FFFF	0.77%	177022
+RDistribution/Zernike/Rz/#00FFFF	0.53%	120926
+Texture/GLCM/GLCM/#bbbbbb	0.23%	53667
+Texture/GLDM/D/#bbbbbb	0.52%	120039
+Texture/GLRLM/RL/#bbbbbb	1.45%	333154
+Texture/GLSZM/SZ/#bbbbbb	33.36%	7.65394e+06
+Texture/NGTDM/NG/#bbbbbb	0.89%	204540
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:18:03
+>>> FINISHED >>>	2023-03-19 08:18:28
+++ date +%s
++ end=1679228308
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 12 threads -- 25 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228308
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=14
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 14
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	14
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:18:28
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 10 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 578287 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53781 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 217 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 85429 us
+Morphology/Basic/E/#4aaaea
+	= 13376 us
+Morphology/Ellipticity/E/#4aaaea
+	= 4066 us
+Morphology/Contour/C/#4aaaea
+	= 54042 us
+Morphology/Hull/H/#4aaaea
+	= 11886 us
+Morphology/Extrema/Ex/#4aaaea
+	= 3901 us
+Morphology/Euler/Eu/#4aaaea
+	= 11170 us
+Morphology/Feret/F/#4aaaea
+	= 35544 us
+Morphology/Martin/M/#4aaaea
+	= 34166 us
+Morphology/Nassenstein/N/#4aaaea
+	= 33827 us
+Morphology/Chords/Ch/#4aaaea
+	= 289064 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 1925 us
+Morphology/RoiR/R/#4aaaea
+	= 154834 us
+Morphology/Erosion/Er/#4aaaea
+	= 282788 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 25687 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 48806 us
+Texture/GLRLM/RL/#bbbbbb
+	= 328541 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 7.87827e+06 us
+Texture/GLDM/D/#bbbbbb
+	= 115341 us
+Texture/NGTDM/NG/#bbbbbb
+	= 205658 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.46314e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.09279e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 122256 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 184895 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 196883 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 271 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 164 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 23.1461
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	47.21%	1.09279e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	10
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	2.5%	578287
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.23%	53781
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	217
+Intensity/Intensity/Int/#FFFF00	0.37%	85429
+Moments/Moments/2D moms/#FFFACD	6.32%	1.46314e+06
+Morphology/Basic/E/#4aaaea	0.06%	13376
+Morphology/Chords/Ch/#4aaaea	1.25%	289064
+Morphology/Contour/C/#4aaaea	0.23%	54042
+Morphology/Ellipticity/E/#4aaaea	0.02%	4066
+Morphology/Erosion/Er/#4aaaea	1.22%	282788
+Morphology/Euler/Eu/#4aaaea	0.05%	11170
+Morphology/Extrema/Ex/#4aaaea	0.02%	3901
+Morphology/Feret/F/#4aaaea	0.15%	35544
+Morphology/Fractal dimension/Fd/#4aaaea	0.11%	25687
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	2360
+Morphology/Hull/H/#4aaaea	0.05%	11886
+Morphology/Martin/M/#4aaaea	0.15%	34166
+Morphology/Nassenstein/N/#4aaaea	0.15%	33827
+Morphology/RoiR/R/#4aaaea	0.67%	154834
+Neighbors/Neighbors/N/#FF69B4	0.85%	196883
+RDistribution/Rdist/Rd/#00FFFF	0.8%	184895
+RDistribution/Zernike/Rz/#00FFFF	0.53%	122256
+Texture/GLCM/GLCM/#bbbbbb	0.21%	48806
+Texture/GLDM/D/#bbbbbb	0.5%	115341
+Texture/GLRLM/RL/#bbbbbb	1.42%	328541
+Texture/GLSZM/SZ/#bbbbbb	34.04%	7.87827e+06
+Texture/NGTDM/NG/#bbbbbb	0.89%	205658
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:18:28
+>>> FINISHED >>>	2023-03-19 08:18:53
+++ date +%s
++ end=1679228333
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 14 threads -- 25 seconds'
++ for i in '"${arr[@]}"'
+++ date +%s
++ start=1679228333
++ /Users/natfugl/work/axle/nyxus-004/BUILD1/nyxus --useGpu=true --verbose=3 '--features=*ALL*' --intDir=/Users/natfugl/work/axle/data/synthetic1/int --segDir=/Users/natfugl/work/axle/data/synthetic1/seg 
+--outDir=./OUT1 '--filePattern=synthetic_nrois=10000_roiarea=1000\.tif' --csvFile=singlecsv --loaderThreads=1 --reduceThreads=16
+Nyxus /// 0.4.2 /// (c) 2021-2023 Axle Informatics Build of Thu Mar 16 17:30:19 2023
+
+Accepted command line arguments:
+	--verbose= : 3
+	--features= : *ALL*
+	--intDir= : /Users/natfugl/work/axle/data/synthetic1/int
+	--segDir= : /Users/natfugl/work/axle/data/synthetic1/seg
+	--outDir= : ./OUT1
+	--filePattern= : synthetic_nrois=10000_roiarea=1000\.tif
+	--csvFile= : singlecsv
+	--loaderThreads= : 1
+	--reduceThreads= : 16
+Ignoring unrecognized arguments:
+	--useGpu=true
+
+Using 34359738368 bytes of memory
+
+Work plan:
+	labels	/Users/natfugl/work/axle/data/synthetic1/seg
+	intensities	/Users/natfugl/work/axle/data/synthetic1/int
+	intensities-to-segmentation map directory	
+	intensities-to-segmentation map file	
+	output	./OUT1
+	file pattern	synthetic_nrois=10000_roiarea=1000\.tif
+	embedded pixel size	
+	output type	singlecsv
+	# of image loader threads	1
+	# of pixel scanner threads	1
+	# of post-processing threads	16
+	pixel distance	5
+	verbosity level	3
+	features	*ALL*
+	GLCM angles	0, 45, 90, 135
+	batch and oversized ROI lower limit 34359738368 bytes
+	temp directory /var/folders/wg/k4yrjs_91db4km3brvnq16w40000gn/T/
+	#CHECKTIMING / exclusive mode of timing FALSE
+
+PixelIntensityFeatures: 0 depends
+BasicMorphologyFeatures: 0 depends
+NeighborsFeature: 0 depends
+ContourFeature: 0 depends
+ConvexHullFeature: 1 depends
+	PERIMETER
+EllipseFittingFeature: 0 depends
+ExtremaFeature: 0 depends
+EulerNumberFeature: 0 depends
+CaliperFeretFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+CaliperMartinFeature: 0 depends
+CaliperNassensteinFeature: 0 depends
+ChordsFeature: 0 depends
+HexagonalityPolygonalityFeature: 2 depends
+	NUM_NEIGHBORS
+	PERIMETER
+	CONVEX_HULL_AREA
+	MAX_FERET_DIAMETER
+	MIN_FERET_DIAMETER
+EnclosingInscribingCircumscribingCircleFeature: 2 depends
+	PERIMETER
+	CONVEX_HULL_AREA
+	NUM_NEIGHBORS
+GeodeticLengthThicknessFeature: 2 depends
+	AREA_PIXELS_COUNT
+	PERIMETER
+RoiRadiusFeature: 1 depends
+	PERIMETER
+ErosionPixelsFeature: 2 depends
+	CONVEX_HULL_AREA
+	PERIMETER
+FractalDimensionFeature: 1 depends
+	PERIMETER
+GLCMFeature: 0 depends
+GLRLMFeature: 0 depends
+GLSZMFeature: 0 depends
+GLDMFeature: 0 depends
+NGTDMFeature: 0 depends
+ImageMomentsFeature: 1 depends
+	PERIMETER
+GaborFeature: 0 depends
+ZernikeFeature: 0 depends
+RadialDistributionFeature: 1 depends
+	PERIMETER
+Skipping .DS_Store
+Skipping .DS_Store
+
+>>> STARTING >>> 2023-03-19 08:18:53
+Image scan1/ImgScan1/Scan1/lightsteelblue
+    68719476736 bytes free (consumed=0) [    0% ]	 INT: /Users/natfugl/work/axle/data/synthetic1/int/synthetic_nrois=10000_roiarea=1000.tif SEG: 
+/Users/natfugl/work/axle/data/synthetic1/seg/synthetic_nrois=10000_roiarea=1000.tif
+	= 11 us
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue
+Gathering ROI metrics
+	12%	1892 ROIs
+	28%	3544 ROIs
+	44%	5203 ROIs
+	60%	6884 ROIs
+	76%	8600 ROIs
+	92%	9804 ROIs
+	= 573301 us
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue
+Dumping ROI metrics to ./OUT1/roi_metrics_synthetic_nrois=10000_roiarea=1000.csv ...
+... done
+	= 53497 us
+Image scan3/ImgScan3/Scan3/lightsteelblue
+	= 153 us
+Processing trivial ROIs
+>>> Scanning batch #1 of 10000 pending ROIs of 10000 all ROIs
+>>> (ROIs 1 ... 10000)
+	 scan trivial 12 %
+	 scan trivial 28 %
+	 scan trivial 44 %
+	 scan trivial 60 %
+	 scan trivial 76 %
+	 scan trivial 92 %
+	allocating ROI buffers
+	reducing ROIs
+Intensity/Intensity/Int/#FFFF00
+	= 85702 us
+Morphology/Basic/E/#4aaaea
+	= 11827 us
+Morphology/Ellipticity/E/#4aaaea
+	= 4066 us
+Morphology/Contour/C/#4aaaea
+	= 55163 us
+Morphology/Hull/H/#4aaaea
+	= 11041 us
+Morphology/Extrema/Ex/#4aaaea
+	= 3686 us
+Morphology/Euler/Eu/#4aaaea
+	= 9836 us
+Morphology/Feret/F/#4aaaea
+	= 29941 us
+Morphology/Martin/M/#4aaaea
+	= 28645 us
+Morphology/Nassenstein/N/#4aaaea
+	= 29549 us
+Morphology/Chords/Ch/#4aaaea
+	= 286964 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 966 us
+Morphology/RoiR/R/#4aaaea
+	= 145091 us
+Morphology/Erosion/Er/#4aaaea
+	= 271585 us
+Morphology/Fractal dimension/Fd/#4aaaea
+	= 23451 us
+Texture/GLCM/GLCM/#bbbbbb
+	= 54846 us
+Texture/GLRLM/RL/#bbbbbb
+	= 327143 us
+Texture/GLSZM/SZ/#bbbbbb
+	= 7.7611e+06 us
+Texture/GLDM/D/#bbbbbb
+	= 116062 us
+Texture/NGTDM/NG/#bbbbbb
+	= 204466 us
+Moments/Moments/2D moms/#FFFACD
+	= 1.40999e+06 us
+Gabor/Gabor/Gabor/#f58231
+	= 1.09128e+07 us
+RDistribution/Zernike/Rz/#00FFFF
+	= 126886 us
+RDistribution/Rdist/Rd/#00FFFF
+	= 172236 us
+	freeing ROI buffers
+	reducing neighbor features and their depends for all ROIs
+Neighbors/Neighbors/N/#FF69B4
+	= 191932 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 338 us
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea
+	= 210 us
+	--> ./OUT1/NyxusFeatures.csv
+--------------------
+Total time of all feature groups [sec] = 22.9024
+Break-down:
+--------------------
+Gabor/Gabor/Gabor/#f58231	47.65%	1.09128e+07
+Image scan1/ImgScan1/Scan1/lightsteelblue	0%	11
+Image scan2a/ImgScan2a/Scan2a/lightsteelblue	2.5%	573301
+Image scan2b/ImgScan2b/Scan2b/lightsteelblue	0.23%	53497
+Image scan3/ImgScan3/Scan3/lightsteelblue	0%	153
+Intensity/Intensity/Int/#FFFF00	0.37%	85702
+Moments/Moments/2D moms/#FFFACD	6.16%	1.40999e+06
+Morphology/Basic/E/#4aaaea	0.05%	11827
+Morphology/Chords/Ch/#4aaaea	1.25%	286964
+Morphology/Contour/C/#4aaaea	0.24%	55163
+Morphology/Ellipticity/E/#4aaaea	0.02%	4066
+Morphology/Erosion/Er/#4aaaea	1.19%	271585
+Morphology/Euler/Eu/#4aaaea	0.04%	9836
+Morphology/Extrema/Ex/#4aaaea	0.02%	3686
+Morphology/Feret/F/#4aaaea	0.13%	29941
+Morphology/Fractal dimension/Fd/#4aaaea	0.1%	23451
+Morphology/HexPolygEncloInsCircleGeodetLenThickness/HP/#4aaaea	0.01%	1514
+Morphology/Hull/H/#4aaaea	0.05%	11041
+Morphology/Martin/M/#4aaaea	0.13%	28645
+Morphology/Nassenstein/N/#4aaaea	0.13%	29549
+Morphology/RoiR/R/#4aaaea	0.63%	145091
+Neighbors/Neighbors/N/#FF69B4	0.84%	191932
+RDistribution/Rdist/Rd/#00FFFF	0.75%	172236
+RDistribution/Zernike/Rz/#00FFFF	0.55%	126886
+Texture/GLCM/GLCM/#bbbbbb	0.24%	54846
+Texture/GLDM/D/#bbbbbb	0.51%	116062
+Texture/GLRLM/RL/#bbbbbb	1.43%	327143
+Texture/GLSZM/SZ/#bbbbbb	33.89%	7.7611e+06
+Texture/NGTDM/NG/#bbbbbb	0.89%	204466
+--------------------
+
+>>> STARTED >>>	2023-03-19 08:18:53
+>>> FINISHED >>>	2023-03-19 08:19:18
+++ date +%s
++ end=1679228358
++ echo 'synthetic_nrois=10000_roiarea=1000\.tif -- 16 threads -- 25 seconds'
+natfugl@andriysmbp nyxus-multicore % 
+
+
+
+
